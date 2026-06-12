@@ -1,0 +1,354 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #FDFBF7;
+    --header: #2D5A27;
+    --accent: #E07A5F;
+    --text: #2F3E46;
+    --white: #FFFFFF;
+    --border: #E8E0D4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.site-header {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1120px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--header);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--header);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links label {
+    margin-right: 6px;
+}
+
+.nav-links input,
+.signup-form input {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 10px 12px;
+    font: inherit;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+.signin-link {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.signin-link:hover {
+    color: var(--white);
+    background-color: #c96249;
+}
+
+.hero {
+    max-width: 1120px;
+    margin: auto;
+    padding: 72px 20px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 48px;
+}
+
+.small-heading {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    color: var(--header);
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: var(--header);
+    margin-bottom: 18px;
+}
+
+.quote {
+    font-size: 18px;
+    max-width: 620px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.primary-button,
+.secondary-button,
+.signup-form button {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 22px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary-button,
+.signup-form button {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.primary-button:hover,
+.signup-form button:hover {
+    background-color: #c96249;
+}
+
+.secondary-button {
+    border: 1px solid var(--header);
+    color: var(--header);
+    background-color: transparent;
+}
+
+.secondary-button:hover {
+    background-color: var(--header);
+    color: var(--white);
+}
+
+.book-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 18px 35px rgba(45, 90, 39, 0.14);
+}
+
+.book-card img {
+    border-radius: 4px;
+}
+
+.section-padding {
+    padding: 68px 20px;
+}
+
+.book-info,
+.author,
+.signup {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.book-info {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.book-info h2,
+.section-heading h2,
+.author-text h2,
+.signup-text h2 {
+    color: var(--header);
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.info-grid,
+.benefit-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.info-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-box,
+.benefit-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.info-box h3,
+.benefit-card h3 {
+    color: var(--header);
+    margin-bottom: 8px;
+}
+
+.benefits {
+    background-color: var(--white);
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.benefit-grid {
+    max-width: 1120px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.author {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 42px;
+}
+
+.author-image img {
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.author-text p {
+    margin: 16px 0 24px;
+    max-width: 620px;
+}
+
+.signup {
+    background-color: var(--header);
+    color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.signup .small-heading {
+    color: #F5C5B5;
+}
+
+.signup h2 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    display: grid;
+    gap: 14px;
+}
+
+.footer {
+    background-color: var(--header);
+    color: var(--white);
+    text-align: center;
+    padding: 22px 20px;
+}
+
+@media (max-width: 850px) {
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links input {
+        width: 100%;
+    }
+
+    .hero,
+    .book-info,
+    .author,
+    .signup {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 48px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .info-grid,
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .signup {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}
